@@ -1,0 +1,26 @@
+.card-deck-container {
+  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-flex: 1;
+  -ms-box-flex: 1;
+  -moz-box-flex: 1;
+  width: 100%;
+}
+
+.filter-container {
+  position: fixed;
+  width: 250px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .filter-container {
+      position: relative;
+      width: 100%;
+  }
+}

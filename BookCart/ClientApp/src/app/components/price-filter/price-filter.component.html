@@ -1,0 +1,16 @@
+<div class="docs-example-viewer-wrapper">
+  <div class="docs-example-viewer-title mat-elevation-z2">
+    <div class="docs-example-viewer-title-spacer">
+      <h4>Price Filter</h4>
+    </div>
+  </div>
+  <div class="docs-example-viewer-body">
+    <mat-slider class="full-width" [max]="max" [min]="min" [step]="step" [thumbLabel]="thumbLabel" [displayWith]="formatLabel"
+      [(ngModel)]="value" (change)="onChange($event)"></mat-slider>
+  </div>
+  <div class="d-flex justify-content-around p-2">
+    <div><strong>{{min | currency: 'USD'}}</strong></div>
+    <div>to</div>
+    <div><strong>{{value | currency: 'USD'}}</strong></div>
+  </div>
+</div>

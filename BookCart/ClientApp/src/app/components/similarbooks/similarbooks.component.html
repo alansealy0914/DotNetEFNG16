@@ -1,0 +1,21 @@
+<div class="docs-example-viewer-wrapper">
+    <div class="docs-example-viewer-title mat-elevation-z2">
+        <div class="docs-example-viewer-title-spacer">
+            <h2>Similar Books</h2>
+        </div>
+    </div>
+    <ng-container *ngIf="SimilarBook$ | async as books; else loading">
+        <div class="d-flex justify-content-start p-2">
+            <div class="card-deck-container">
+                <div *ngFor="let book of books" class="p-1">
+                    <app-book-card [book]="book"></app-book-card>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <ng-template #loading>
+        <div class="spinner-container">
+            <mat-spinner></mat-spinner>
+        </div>
+    </ng-template>
+</div>

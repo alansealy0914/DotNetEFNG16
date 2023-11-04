@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { Validators, FormBuilder } from '@angular/forms';
+import { Validators, UntypedFormBuilder } from '@angular/forms';
 import { UserService } from 'src/app/services/user.service';
 import { CustomValidationService } from 'src/app/services/custom-validation.service';
 import { Router } from '@angular/router';
@@ -21,7 +21,7 @@ export class UserRegistrationComponent implements OnDestroy {
   constructor(
     private userService: UserService,
     private router: Router,
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private snackBarService: SnackbarService,
     private customValidation: CustomValidationService) { }
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ValidatorFn, AbstractControl, FormControl } from '@angular/forms';
+import { ValidatorFn, AbstractControl, UntypedFormControl } from '@angular/forms';
 import { UserService } from './user.service';
 
 @Injectable({
@@ -30,7 +30,7 @@ export class CustomValidationService {
     }
   }
 
-  userNameValidator(userControl: FormControl) {
+  userNameValidator(userControl: UntypedFormControl) {
     clearTimeout(this.debouncer);
     return new Promise(resolve => {
       this.debouncer = setTimeout(() => {

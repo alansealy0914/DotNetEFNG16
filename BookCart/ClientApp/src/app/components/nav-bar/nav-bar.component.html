@@ -2,7 +2,7 @@
     <mat-toolbar-row>
         <div class="brand-title">
             <button mat-button [routerLink]='["/"]'>
-                <mat-icon>grain</mat-icon> POP THAT ISH &reg;&trade; 
+                <mat-icon>book</mat-icon> Book Cart
             </button>
         </div>
         <div>
@@ -19,14 +19,7 @@
             <button mat-button *ngIf="!userData.isLoggedIn" [routerLinkActive]='["link-active"]'
                 [routerLink]='["/login"]'>Login</button>
             <button mat-button *ngIf="userData.userTypeId==userType.admin" [routerLink]='["/admin/books"]'>Admin
-                Panel
-                <button mat-button *ngIf="userData.userTypeId==userType.admin">
-                    <a class="github-link" href="/swagger/index.html" target="_blank">
-                        <span><img src="https://static1.smartbear.co/swagger/media/assets/swagger_fav.png" /></span>
-                        Swagger
-                    </a>
-                </button>
-            </button>
+                Panel</button>
 
             <ng-container *ngIf="userData.isLoggedIn">
                 <button mat-button [matMenuTriggerFor]="menu">
@@ -38,7 +31,7 @@
                 </mat-menu>
             </ng-container>
             <app-theme-picker></app-theme-picker>
-            <!--<button mat-butto *ngIf="userData.userTypeId==userType.admin">
+            <button mat-button>
                 <a class="github-link" href="/swagger/index.html" target="_blank">
                     <span><img src="https://static1.smartbear.co/swagger/media/assets/swagger_fav.png" /></span>
                     Swagger
@@ -46,7 +39,7 @@
             </button>
             <button mat-button><a class="github-link" href="https://github.com/AnkitSharma-007/bookcart"
                     target="_blank"><i class="fa fa-github"></i> GitHub</a>
-            </button>-->
+            </button>
         </div>
     </mat-toolbar-row>
 </mat-toolbar>

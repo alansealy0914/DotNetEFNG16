@@ -9,17 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BookCart
 build_property.RootNamespace = BookCart
-build_property.ProjectDir = C:\Users\alans\Desktop\Cherry-Picker\eComApp\BookCart\BookCart\
+build_property.ProjectDir = C:\Users\alans\Desktop\Refresh\BookCart\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\alans\Desktop\Cherry-Picker\eComApp\BookCart\BookCart
+build_property.MSBuildProjectDirectory = C:\Users\alans\Desktop\Refresh\BookCart
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/alans/Desktop/Cherry-Picker/eComApp/BookCart/BookCart/Pages/Error.cshtml]
+[C:/Users/alans/Desktop/Refresh/BookCart/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alans/Desktop/Cherry-Picker/eComApp/BookCart/BookCart/Pages/_ViewImports.cshtml]
+[C:/Users/alans/Desktop/Refresh/BookCart/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

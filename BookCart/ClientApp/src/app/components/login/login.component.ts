@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { CartService } from 'src/app/services/cart.service';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { SubscriptionService } from 'src/app/services/subscription.service';
-import { UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { User } from 'src/app/models/user';
 import { takeUntil } from 'rxjs/operators';
 import { WishlistService } from 'src/app/services/wishlist.service';
@@ -28,9 +28,9 @@ export class LoginComponent implements OnInit, OnDestroy {
     private subscriptionService: SubscriptionService,
     private wishlistService: WishlistService) { }
 
-  loginForm = new UntypedFormGroup({
-    username: new UntypedFormControl('', Validators.required),
-    password: new UntypedFormControl('', Validators.required)
+  loginForm = new FormGroup({
+    username: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required)
   });
 
   get username() {

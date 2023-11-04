@@ -1,4 +1,3 @@
-
 <mat-card class="book-card mat-elevation-z2" [class.on-book-card-hover]="isActive" (mouseover)="isActive=true"
     (mouseout)="isActive=false">
     <mat-card-content class="image-card">
@@ -16,7 +15,7 @@
                 <strong>{{book.title}}</strong>
             </a>
         </div>
-        <p>{{book.price | currency : 'USD'}}</p>
+        <p>{{book.price | currency : 'INR'}}</p>
         <app-addtocart [bookId]="book.bookId"></app-addtocart>
     </mat-card-content>
 </mat-card>

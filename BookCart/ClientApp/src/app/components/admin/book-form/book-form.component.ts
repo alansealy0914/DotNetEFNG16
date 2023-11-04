@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Book } from 'src/app/models/book';
 import { BookService } from 'src/app/services/book.service';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -14,7 +14,7 @@ import { takeUntil } from 'rxjs/operators';
 export class BookFormComponent implements OnInit, OnDestroy {
 
   private formData = new FormData();
-  bookForm: UntypedFormGroup;
+  bookForm: FormGroup;
   book: Book = new Book();
   formTitle = 'Add';
   coverImagePath;
@@ -26,7 +26,7 @@ export class BookFormComponent implements OnInit, OnDestroy {
   constructor(
     private bookService: BookService,
     private route: ActivatedRoute,
-    private fb: UntypedFormBuilder,
+    private fb: FormBuilder,
     private router: Router) {
 
     this.bookForm = this.fb.group({

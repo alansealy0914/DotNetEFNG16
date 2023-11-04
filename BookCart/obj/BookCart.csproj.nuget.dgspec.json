@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alans\\Desktop\\Cherry-Picker\\eComApp\\BookCart\\BookCart\\BookCart.csproj": {}
+    "C:\\Users\\alans\\Desktop\\Refresh\\BookCart\\BookCart.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alans\\Desktop\\Cherry-Picker\\eComApp\\BookCart\\BookCart\\BookCart.csproj": {
+    "C:\\Users\\alans\\Desktop\\Refresh\\BookCart\\BookCart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alans\\Desktop\\Cherry-Picker\\eComApp\\BookCart\\BookCart\\BookCart.csproj",
+        "projectUniqueName": "C:\\Users\\alans\\Desktop\\Refresh\\BookCart\\BookCart.csproj",
         "projectName": "BookCart",
-        "projectPath": "C:\\Users\\alans\\Desktop\\Cherry-Picker\\eComApp\\BookCart\\BookCart\\BookCart.csproj",
+        "projectPath": "C:\\Users\\alans\\Desktop\\Refresh\\BookCart\\BookCart.csproj",
         "packagesPath": "C:\\Users\\alans\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alans\\Desktop\\Cherry-Picker\\eComApp\\BookCart\\BookCart\\obj\\",
+        "outputPath": "C:\\Users\\alans\\Desktop\\Refresh\\BookCart\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -42,8 +42,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -99,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

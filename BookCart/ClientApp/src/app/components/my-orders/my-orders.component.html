@@ -39,7 +39,7 @@
 
                         <ng-container matColumnDef="orderTotal">
                             <th mat-header-cell *matHeaderCellDef> Order Total </th>
-                            <td mat-cell *matCellDef="let row">{{row.cartTotal|currency : 'USD'}}</td>
+                            <td mat-cell *matCellDef="let row">{{row.cartTotal|currency : 'INR'}}</td>
                         </ng-container>
 
                         <ng-container matColumnDef="expandedDetail">
@@ -62,7 +62,7 @@
                                                                 [routerLink]="['/books/details/',order.book.bookId]">{{order.book.title}}</a>
                                                         </td>
                                                         <td>{{order.quantity}}</td>
-                                                        <td>{{order.book.price * order.quantity|currency : 'USD'}}</td>
+                                                        <td>{{order.book.price * order.quantity|currency : 'INR'}}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

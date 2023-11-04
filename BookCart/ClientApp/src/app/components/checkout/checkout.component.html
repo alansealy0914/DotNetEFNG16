@@ -44,11 +44,7 @@
                         </mat-form-field>
                         <mat-card-actions align="right">
                             <div fxFlex></div>
-                            
-               
-                            <button type="submit" mat-raised-button color="primary">
-                                <a class="text-white" href="#">Pay CashApp</a></button>
-                            <!--<button type="submit" mat-raised-button color="primary">Place Order</button>-->
+                            <button type="submit" mat-raised-button color="primary">Place Order</button>
                             <button type="button" mat-raised-button color="warn"
                                 [routerLink]='["/shopping-cart"]'>CANCEL</button>
                         </mat-card-actions>
@@ -86,8 +82,8 @@
                         <tr *ngFor="let item of checkOutItems.orderDetails">
                             <td><a [routerLink]="['/books/details/',item.book.bookId]">{{item.book.title}}</a></td>
                             <td>{{item.quantity}}</td>
-                            <td>{{item.book.price| currency : 'USD'}}</td>
-                            <td>{{ item.book.price * item.quantity | currency : 'USD'}}</td>
+                            <td>{{item.book.price| currency : 'INR'}}</td>
+                            <td>{{ item.book.price * item.quantity | currency : 'INR'}}</td>
                         </tr>
                     </table>
                     <tfoot class="table">
@@ -95,11 +91,10 @@
                             <th></th>
                             <th></th>
                             <td>Grand Total</td>
-                            <th>{{totalPrice| currency : 'USD' }}</th>
+                            <th>{{totalPrice| currency : 'INR' }}</th>
                         </tr>
                     </tfoot>
                 </mat-card-content>
-                
             </mat-card>
         </div>
     </div>

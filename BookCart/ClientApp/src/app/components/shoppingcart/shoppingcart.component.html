@@ -43,7 +43,7 @@
                         <td> <img matTooltip={{item.book.title}} matTooltipPosition="after"
                                 src="/Upload/{{item.book.coverFileName}}"></td>
                         <td><a [routerLink]="['/books/details/',item.book.bookId]">{{item.book.title}}</a></td>
-                        <td>{{ item.book.price | currency : 'USD ' }}</td>
+                        <td>{{ item.book.price | currency : 'INR' }}</td>
                         <td>
                             <div class="btn-container">
                                 <div class="btn-minus"><button [disabled]="item.quantity < 2 ? true : false"
@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                         </td>
-                        <td>{{ item.book.price * item.quantity | currency : 'USD'}}</td>
+                        <td>{{ item.book.price * item.quantity | currency : 'INR'}}</td>
                         <td><button mat-icon-button color="accent" matTooltip="Delete item"
                                 (click)="deleteCartItem(item.book.bookId)">
                                 <mat-icon>delete</mat-icon>
@@ -74,7 +74,7 @@
                         <th></th>
                         <th></th>
                         <td>Cart Total:</td>
-                        <th>{{totalPrice| currency : 'USD' }}</th>
+                        <th>{{totalPrice| currency : 'INR' }}</th>
                         <th>
                             <button class="mat-elevation-z4" mat-raised-button color="warn"
                                 [routerLink]='["/checkout"]'>CheckOut</button>

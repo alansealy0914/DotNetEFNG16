@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router, Route } from '@angular/router';
+import {
+  CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree,
+  Router, CanActivateChild, CanLoad, Route
+} from '@angular/router';
 import { Observable } from 'rxjs';
 import { User } from '../models/user';
 import { SubscriptionService } from '../services/subscription.service';
@@ -8,7 +11,7 @@ import { UserType } from '../models/usertype';
 @Injectable({
   providedIn: 'root'
 })
-export class AdminAuthGuard  {
+export class AdminAuthGuard implements CanActivate, CanActivateChild, CanLoad {
 
   userDataSubscription: any;
   userData = new User();

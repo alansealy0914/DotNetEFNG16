@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { startWith, map } from 'rxjs/operators';
 import { BookService } from 'src/app/services/book.service';
 import { Book } from 'src/app/models/book';
-import { UntypedFormControl } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { SubscriptionService } from 'src/app/services/subscription.service';
 
@@ -15,7 +15,7 @@ import { SubscriptionService } from 'src/app/services/subscription.service';
 export class SearchComponent implements OnInit {
 
   public books: Book[];
-  searchControl = new UntypedFormControl();
+  searchControl = new FormControl();
   filteredBooks: Observable<Book[]>;
 
   constructor(
